@@ -29,7 +29,7 @@ except ModuleNotFoundError:
 
 Y_PLAY=False
 YSTREAM=False
-STREAM=os.environ.get("STARTUP_STREAM", "https://www.youtube.com/watch?v=zcrUCvBD16k")
+STREAM=os.environ.get("STARTUP_STREAM")
 regex = r"^(?:https?:\/\/)?(?:www\.)?youtu\.?be(?:\.com)?\/?.*(?:watch|embed)?(?:.*v=|v\/|\/)([\w\-_]+)\&?"
 match = re.match(regex,STREAM)
 if match:
